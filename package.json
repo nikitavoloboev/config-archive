@@ -1,0 +1,61 @@
+{
+  "name": "ts",
+  "scripts": {
+    "ts": "bun --watch scripts/run.ts",
+    "watch": "bun cmd.ts run",
+    "dev": "bun --watch run.ts",
+    "try": "bun --watch try/try.ts",
+    "cmd": "bun --watch cmd.ts",
+    "build": "tsup lib/file.ts --format esm --dts",
+    "test:watch": "bun test --watch",
+    "test:scripts": "bun test --watch scripts/scripts.test.ts",
+    "test:util": "bun test --watch lib/util/src/util.test.ts",
+    "node": "tput reset && tsx run.ts"
+  },
+  "dependencies": {
+    "@clack/core": "^0.3.4",
+    "@clack/prompts": "^0.8.1",
+    "@libsql/client": "^0.14.0",
+    "@nikiv/ts-utils": "link:@nikiv/ts-utils",
+    "@nozbe/microfuzz": "^1.0.0",
+    "@orama/orama": "^3.0.1",
+    "@swan-io/boxed": "^3.1.2",
+    "@types/node": "^22.9.0",
+    "@upstash/redis": "^1.34.3",
+    "arktype": "^2.0.0-rc.23",
+    "chatgpt": "^5.2.5",
+    "citty": "^0.1.6",
+    "clipboardy": "^4.0.0",
+    "dotenv": "^16.4.5",
+    "effect": "^3.10.15",
+    "execa": "^9.5.1",
+    "fs-nano-store": "^0.3.1",
+    "gray-matter": "^4.0.3",
+    "jest-fixtures": "^0.6.0",
+    "jszip": "^3.10.1",
+    "magic-regexp": "^0.8.0",
+    "markdown-link-extractor": "^4.0.2",
+    "micromark": "^4.0.1",
+    "ollama": "^0.5.10",
+    "open": "^10.1.0",
+    "openai": "^4.72.0",
+    "osascript-tag": "^0.1.2",
+    "prettier": "^3.3.3",
+    "simple-git": "^3.27.0",
+    "sqlite3": "^5.1.7",
+    "sst": "^3.3.22",
+    "telegraf": "^4.16.3",
+    "tinybase": "^5.3.9",
+    "tsup": "^8.3.5",
+    "ufo": "^1.5.4",
+    "watcher": "^2.3.1",
+    "zx": "^8.2.2"
+  },
+  "devDependencies": {
+    "bun-types": "1.1.34"
+  },
+  "prettier": {
+    "semi": false
+  },
+  "type": "module"
+}

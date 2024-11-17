@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["ESNext", "dom"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "noEmit": true,
+    "allowJs": true,
+    "paths": {
+      "@grafbase/generated": ["./api/grafbase/generated"]
+    },
+    "allowImportingTsExtensions": true,
+    "moduleDetection": "force",
+    "composite": true,
+    "downlevelIteration": true,
+    "noUncheckedIndexedAccess": true,
+    "types": ["bun-types"]
+  },
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js"]
+}
