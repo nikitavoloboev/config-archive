@@ -16,8 +16,8 @@ bun i
 
 ## Run
 
-Currently use this repo to run [scripts](scripts) or for some [daemons](daemons).
+Currently use this repo to run [scripts](scripts) or [daemons](daemons).
 
-Run the `.ts` files with `bun --watch`.
+Run `.ts` files with `bun --watch`.
 
 [![Discord](https://img.shields.io/badge/Discord-100000?style=flat&logo=discord&logoColor=white&labelColor=black&color=black)](https://discord.com/invite/TVafwaD23d) [![X](https://img.shields.io/badge/nikitavoloboev-100000?logo=X&color=black)](https://x.com/nikitavoloboev) [![nikiv.dev](https://img.shields.io/badge/nikiv.dev-black)](https://nikiv.dev)
