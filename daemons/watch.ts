@@ -4,6 +4,7 @@ import path from "node:path"
 import os from "node:os"
 
 async function main() {
+  // goku config
   const gokuConfigPath = path.join(os.homedir(), "src/config/karabiner")
   const gokuConfigPathWatcher = new Watcher(gokuConfigPath)
   gokuConfigPathWatcher.on("change", async (filePath) => {
@@ -13,9 +14,17 @@ async function main() {
     )
     if (filePath === targetFile) {
       // TODO: if error, show notification
-      // on success it says `Done!`, can check for that?
       await $`/opt/homebrew/bin/goku`
     }
+  })
+  // github bio
+  const githubBioPath = path.join(
+    os.homedir(),
+    "src/other/nikitavoloboev/readme.md",
+  )
+  const githubBioWatcher = new Watcher(githubBioPath)
+  githubBioWatcher.on("change", async () => {
+    await $`cd ~/src/other/nikitavoloboev && git add . && git commit -m "."`
   })
 }
 
