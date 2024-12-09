@@ -46,7 +46,7 @@ const links = tabs.map((tab) => {
     url: tab.url,
   }
 })
-const folderPath = path.join(os.homedir(), "/data/private/safari-sessions")
+const folderPath = path.join(os.homedir(), "/data/safari-sessions")
 let date = new Date()
 let currentDateStr = `${date.getFullYear()}-${String(
   date.getMonth() + 1,

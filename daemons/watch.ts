@@ -17,15 +17,16 @@ async function main() {
       await $`/opt/homebrew/bin/goku`
     }
   })
+  // TODO: has issues crushing
   // github bio
-  const githubBioPath = path.join(
-    os.homedir(),
-    "src/other/nikitavoloboev/readme.md",
-  )
-  const githubBioWatcher = new Watcher(githubBioPath)
-  githubBioWatcher.on("change", async () => {
-    await $`cd ~/src/other/nikitavoloboev && git add . && git commit -m "." && git push`
-  })
+  // const githubBioPath = path.join(
+  //   os.homedir(),
+  //   "src/other/nikitavoloboev/readme.md",
+  // )
+  // const githubBioWatcher = new Watcher(githubBioPath)
+  // githubBioWatcher.on("change", async () => {
+  //   await $`cd ~/src/other/nikitavoloboev && git add . && git commit -m "." && git push`
+  // })
 }
 
 await main()
