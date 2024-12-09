@@ -24,7 +24,7 @@ async function main() {
   )
   const githubBioWatcher = new Watcher(githubBioPath)
   githubBioWatcher.on("change", async () => {
-    await $`cd ~/src/other/nikitavoloboev && git add . && git commit -m "."`
+    await $`cd ~/src/other/nikitavoloboev && git add . && git commit -m "." && git push`
   })
 }
 
